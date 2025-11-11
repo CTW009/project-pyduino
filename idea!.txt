@@ -1,0 +1,43 @@
+"all of this is prone to change!!! and is just an idea at this point in time!"
+
+serial communication expected format
+	
+	id will refer to a constant and known component that would be connected to the system.
+	the value will refer to many things i.e.: angle of a servo, resistance value, or a distance from a sensor!
+
+	id || value
+
+	
+	a problem will arise when we have these constant values and we have to address it. that being the pins and where they are plugged in to the system. 
+
+	my idea is: 
+
+	we initiate a setup sequence by typing a known value as our id ex: enter_setup, or 0000 as our trigger
+
+	as a result we can keep our formatting scheme and add on a couple of things
+	
+
+	ex:  of our formatting 
+		
+		id || pin number || pin type (in|out) || type of pin (digital/analog)
+			
+			to exit we shall enter 0000 or exit_setup and we shall save this info into mem "every time we enter previous config needs to be deleted might cause some trouble"
+
+	
+	because of serial communication we can not be precise so we still need a way of getting precision like how we do when we are close to the hardware.
+
+	we can do this by having a class dedicated to these components then switching them on and off but that will eat a decent chunk of or mem if I try to include as much as i can.... (possible limitation?)
+
+	if we can match a known id in setup the cross match it with a class we should be able to create a method that will switch on and off as needed
+
+	Ex: 
+	
+		we know the name servo when we create a new setup we look for id the id already exists if so we know its a strict component. 
+		so we can take the given input to guide our way to make the component work!      (though now that I think of it we need more then one pin for some things need a rework if I am to continue)	
+	
+
+	
+
+
+	
+
