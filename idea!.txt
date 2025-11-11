@@ -18,11 +18,9 @@ serial communication expected format
 	
 
 	ex:  of our formatting 
-		
-		id || pin number || pin type (in|out) || type of pin (digital/analog)
-			
-			to exit we shall enter 0000 or exit_setup and we shall save this info into mem "every time we enter previous config needs to be deleted might cause some trouble"
 
+	id |p| pin number | pin number |/p| |t| pin type | pin type |/t| 
+		
 	
 	because of serial communication we can not be precise so we still need a way of getting precision like how we do when we are close to the hardware.
 
@@ -40,4 +38,5 @@ serial communication expected format
 
 
 	
+
 
