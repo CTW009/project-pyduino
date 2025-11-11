@@ -19,9 +19,14 @@ serial communication expected format
 
 	ex:  of our formatting 
 
-	id |p| pin number | pin number |/p| |t| pin type | pin type |/t| 
+	id |p| pin number | pin number |/p| |pi| pin type(in/out) | pin type(in/out) |/pi| |pt| anglog/dig | anglog/dig |/pt|
 		
-	
+- it will always expect a id to begin!
+- all sections are seperated by blocks
+	- p=pin number
+	- pi=pin interface
+	- pin type
+
 	because of serial communication we can not be precise so we still need a way of getting precision like how we do when we are close to the hardware.
 
 	we can do this by having a class dedicated to these components then switching them on and off but that will eat a decent chunk of or mem if I try to include as much as i can.... (possible limitation?)
@@ -38,5 +43,6 @@ serial communication expected format
 
 
 	
+
 
 
